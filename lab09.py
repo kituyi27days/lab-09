@@ -13,8 +13,9 @@ def two_sum(nums, target):
     ''' Loop through the whole list, 
     then use another loop to loop through the the next item in the list, 
     then add the two numbers you get by the two different loops and check againt target, 
-    then also make sure the second loop in iside the first loop so that it will chech the first item against everthing else in the list 
-    and so on so fourth till everything in the list has been checked.'''
+    then also make sure the second loop in iside the first loop so that 
+    it will chech the first item against everthing else in the list 
+    and so on so fourth till everything in the list has been checked. '''
     for i in range(len(nums)):
         for j in range(i + 1, len(nums)):
             if nums[i] + nums[j] == target:
@@ -27,7 +28,8 @@ def max_profit(prices):
     loop through each price, 
     If the current price is lower than our minimum price change the lowest price, 
     calculate the profit we would make by selling at the current price, 
-    If that profit is greater than our previous maximum profit change it, return the maximum profit. '''
+    If that profit is greater than our previous maximum profit change it, 
+    return the maximum profit. '''
 
     if not prices:
         return 0
@@ -71,7 +73,8 @@ def is_balanced(s):   # Part 4 - stretch (optional)
     # Outline:
     '''Create an empty stack and a dictionary to match brackets, 
     loop through the string and add opening brackets to the stack, 
-    when a closing bracket appears check if it matches the last opening bracket, return False if it does not match or the stack is empty, 
+    when a closing bracket appears check if it matches the last opening bracket, 
+     return False if it does not match or the stack is empty, 
     return True if the stack is empty at the end otherwise return False'''
     stack = []
 
